@@ -25,28 +25,28 @@ public class Rational {
         this.denominator = denominator;
     }
 
-    public Rational add(Rational rat1, Rational rat2){
+    public static Rational add(Rational rat1, Rational rat2){
         int newNumerator = (rat1.getNumerator() * rat2.getDenominator()) + (rat1.getDenominator() * rat2.getNumerator());
         int newDenom = rat1.getDenominator() * rat2.getDenominator();
 
         return new Rational(newNumerator, newDenom);
     }
 
-    public Rational subtract(Rational rat1, Rational rat2){
+    public static Rational subtract(Rational rat1, Rational rat2){
         int newNumerator = (rat1.getNumerator() * rat2.getDenominator()) - (rat1.getDenominator() * rat2.getNumerator());
         int newDenom = rat1.getDenominator() * rat2.getDenominator();
 
         return new Rational(newNumerator, newDenom);
     }
 
-    public Rational multiply(Rational rat1, Rational rat2) {
+    public static Rational multiply(Rational rat1, Rational rat2) {
         int newNumerator = rat1.getNumerator() * rat2.getNumerator();
         int newDenom = rat1.getDenominator() * rat2.getDenominator();
 
         return new Rational(newNumerator, newDenom);
     }
 
-    public Rational divide(Rational rat1, Rational rat2) {
+    public static Rational divide(Rational rat1, Rational rat2) {
         int newNumerator = rat1.getNumerator() * rat2.getDenominator();
         int newDenom = rat1.getDenominator() * rat2.getNumerator();
 

@@ -2,6 +2,9 @@ package ICE2;
 
 import java.util.Scanner;
 
+import static ICE2.Rational.add;
+
+
 public class RationalTest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -22,10 +25,16 @@ public class RationalTest {
 
         Rational rat2 = new Rational(numTwo, denomTwo);
 
+        Rational addResult = add(rat1, rat2);
+        Rational subtractResult = Rational.subtract(rat1, rat2);
+        Rational multiplyResult = Rational.multiply(rat1, rat2);
+        Rational divideResult = Rational.divide(rat1, rat2);
+
         System.out.println("For r = " + numOne + "/" + denomOne + " and s = " + numTwo + " / " + denomTwo);
-        System.out.println("r + s =" + )
-
-
+        System.out.println("r + s = " + addResult.getNumerator() + "/" + addResult.getDenominator());
+        System.out.println("r - s = " + subtractResult.getNumerator() + "/" + subtractResult.getDenominator());
+        System.out.println("r * s = " + multiplyResult.getNumerator() + "/" + multiplyResult.getDenominator());
+        System.out.println("r / s = " + divideResult.getNumerator() + "/" + divideResult.getDenominator());
 
     }
 }
