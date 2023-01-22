@@ -1,0 +1,1 @@
+javac -d out -classpath src/javax/mail/mailapi-1.5.5.jar;src/javax/activation/activation.jar;src/com/sun/mail/smtp/smtp-1.5.5.jar src/util/Emailer.java src/demo/Tester.java

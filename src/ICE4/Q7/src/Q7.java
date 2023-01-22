@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+
+
+public class Q7 {
+    public static void main(String[] args) {
+        // ArrayList<String> container = new ArrayList<>(); // this will only recognize "apple" since it's a string
+        // to add other object types into the array use Object superclass
+        ArrayList<Object> container = new ArrayList<>();
+        container.add("apple");
+        container.add(1);
+        container.add(3.14);
+    
+        for (Object c : container) {
+            System.out.println(c);
+        }
+    }
+}
